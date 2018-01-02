@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.bootcss.com/vue/2.5.13/vue.js"></script>
+    <script type="text/javascript" src="../dist/index.js"></script>    
+    <title>vue-component-template</title>
+</head>
+
+<body>
+    <div id="app">
+        <vue-squares></vue-squares>
+    </div>
+</body>
+<script>
+    Vue.component('vue-squares', BSCharts.default.components['vue-squares'])
+    new Vue({
+        el: '#app'
+    })
+</script>
+</html>
